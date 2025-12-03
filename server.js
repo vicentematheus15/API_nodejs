@@ -22,3 +22,7 @@ app.get('/usuarios', (req, res) => {
 
 
 app.listen(3000)
+
+
+/*  usuario: vicente_user
+    senha: JPbTlkN6BUy9UXHW+ */
