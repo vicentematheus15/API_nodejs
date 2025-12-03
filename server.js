@@ -7,13 +7,17 @@ const users = []
 
 
 app.post('/usuarios', (req, res) =>{
-    console.log(req)
-    res.send('Usuario criado com sucesso')
+
+    users.push(req.body)
+
+    res.status(201).json(req.body)
 })
 
 
 app.get('/usuarios', (req, res) => {
-    res.send('ok, deu boa')
+
+    res.status(200).json(users)
+    
 })
 
 
