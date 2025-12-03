@@ -6,13 +6,13 @@ const users = []
 
 
 app.post('/usuarios', (req, res) =>{
-    
+    console.log(req)
     res.send('Usuario criado com sucesso')
 })
 
 
 app.get('/usuarios', (req, res) => {
-    res.send('ok, deu bom')
+    res.send('ok, deu boa')
 })
 
 
